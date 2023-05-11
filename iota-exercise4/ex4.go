@@ -11,20 +11,24 @@
 
 package main
 
+import "fmt"
+
 const (
-	_           = iota // c0 == 0
-	KB ByteSize = 1 << (10 * iota)
+	_ = 1 << (10 * iota)
+	KB
 	MB
 	GB
 	TB
-	
-	b
-	c
-	d
-	e
-	f
+	PB
+	EB
 )
 
 func main() {
+	fmt.Printf("1 KB = %d bytes\n", KB)
+	fmt.Printf("1 MB = %d bytes\n", MB)
+	fmt.Printf("1 GB = %d bytes\n", GB)
+	fmt.Printf("1 TB = %d bytes\n", TB)
+	fmt.Printf("1 PB = %d bytes\n", PB)
+	fmt.Printf("1 EB = %d bytes\n", EB)
 
 }
