@@ -20,4 +20,9 @@ func main() {
 	fmt.Println(slice[0])
 	fmt.Println(slice[1])
 
+	fmt.Println(len(slice))
+
+	for i := 0; i < len(slice); i++ {
+		fmt.Println(slice[i])
+	}
 }
