@@ -8,5 +8,8 @@ func main() {
 	fmt.Println(len(slice))
 	fmt.Printf("%T\n", slice)
 
-	//using for range 
+	//using for range
+	for i, v := range slice {
+		fmt.Printf("%v - %v\n", i, v)
+	}
 }
