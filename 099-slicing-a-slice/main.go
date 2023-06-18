@@ -18,8 +18,9 @@ func main() {
 	// [inclusive:]
 	fmt.Printf("xi - %#v\n", xi[4:])
 	fmt.Println("-------------")
-
 	// [:]
+	fmt.Printf("xi - %#v\n", xi[:])
+	fmt.Println("-------------")
 	fmt.Printf("xi - %#v\n", xi[:])
 	fmt.Println("-------------")
 }
