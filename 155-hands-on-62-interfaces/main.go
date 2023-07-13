@@ -39,6 +39,7 @@ func main() {
 		length: 5,
 		width:  5,
 	}
+
 	fmt.Println(info(c1))
 	fmt.Println(info(s1))
 
