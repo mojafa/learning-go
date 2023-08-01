@@ -5,25 +5,31 @@
 
 package main
 
-import "testing"
+import (
+	"log"
+	"testing"
+)
 
 func TestAdd(t *testing.T) {
-	total := add(1, 2)
-	if total != 3 {
-		t.Errorf("Sum was incorrect, got: %d, want: %d.", total, 3)
+	got := add(1, 2)
+	want := 3
+	if got != want {
+		log.Fatalf("error - want %v, got %v", want, got)
 	}
 }
 
 func TestSubtract(t *testing.T) {
-	result := subtract(7, 5)
-	if result != 2 {
-		t.Errorf("Result was incorrect, got: %d, want: %d.", subtract, 2)
+	got := subtract(7, 5)
+	want := 2
+	if got != want {
+		log.Fatalf("error - want %v, got %v", want, got)
 	}
 }
 
 func TestDoMath(t *testing.T) {
-	result := doMath(add, 7, 5)
-	if result != 12 {
-		t.Errorf("Result was incorrect, got: %d, want: %d.", result, 12)
+	got := doMath(add, 7, 5)
+	want := doMath(add, 7, 5)
+	if got != want {
+		log.Fatalf("error - want %v, got %v", want, got)
 	}
 }
