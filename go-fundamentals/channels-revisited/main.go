@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/mojafa/channels-revisited/helpers"
+	"github.com/mojafa/go-fundamentals/channels-revisited/helpers"
 )
 
 const numPool = 1000
