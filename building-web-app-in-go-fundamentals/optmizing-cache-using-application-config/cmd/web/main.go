@@ -5,9 +5,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/mojafa/building-web-app-in-go-fundamentals/setting-app-wide-config/pkg/config"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/setting-app-wide-config/pkg/handlers"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/setting-app-wide-config/pkg/render"
+	"github.com/mojafa/building-web-app-in-go-fundamentals/optmizing-cache-using-application-config/pkg/config"
+	"github.com/mojafa/building-web-app-in-go-fundamentals/optmizing-cache-using-application-config/pkg/handlers"
+	"github.com/mojafa/building-web-app-in-go-fundamentals/optmizing-cache-using-application-config/pkg/render"
 )
 
 const portNumber = ":8080"
@@ -22,10 +22,16 @@ func main() {
 	}
 
 	app.TemplateCache = tc
+	app.UseCache = false
 
-	http.HandleFunc("/", handlers.Home)
-	http.HandleFunc("/about", handlers.About)
+	repo := handlers.NewRepo(&app)
+	handlers.NewHandlers(repo)
 
-	fmt.Println(fmt.Sprintf("Staring application on port %s", portNumber))
+	render.NewTemplates(&app)
+
+	http.HandleFunc("/", handlers.Repo.Home)
+	http.HandleFunc("/about", handlers.Repo.About)
+
+	fmt.Println(fmt.Sprintf("Starting application on port %s", portNumber))
 	_ = http.ListenAndServe(portNumber, nil)
 }
