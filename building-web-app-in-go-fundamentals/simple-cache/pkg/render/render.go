@@ -18,9 +18,10 @@ func RenderTemplateTEst(w http.ResponseWriter, tmpl string) {
 
 var tc = make(map[string]*template.Template)
 
-func RenderTemplate(name string, tmpl *template.Template) {
+func RenderTemplate(w http.ResponseWriter, t string) {
 	var tmpl *template.Template
 	var err error
+
 	// check to see if we already have the template in our cache
 	_, inMap := tc[t]
 	if !inMap {
