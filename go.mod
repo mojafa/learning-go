@@ -7,6 +7,7 @@ require github.com/angelodlfrtr/go-invoice-generator v0.6.0
 require (
 	github.com/GoesToEleven/dog v0.0.0-20230428023317-90bef1c76cb9 // indirect
 	github.com/GoesToEleven/puppy v1.2.0 // indirect
+	github.com/bmizerany/pat v0.0.0-20210406213842-e4b6760bdd6f
 	github.com/cockroachdb/apd v1.1.0 // indirect
 	github.com/creasty/defaults v1.6.0 // indirect
 	github.com/go-pdf/fpdf v0.6.0 // indirect
