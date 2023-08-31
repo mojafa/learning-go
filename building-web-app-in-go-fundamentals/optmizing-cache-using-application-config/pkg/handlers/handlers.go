@@ -3,8 +3,8 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/mojafa/building-web-app-in-go-fundamentals/optmizing-cache-using-application-config/pkg/config"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/optmizing-cache-using-application-config/pkg/render"
+	"github.com/tsawler-go-course/optmizing-cache-using-application-config/pkg/config"
+	"github.com/tsawler-go-course/optmizing-cache-using-application-config/pkg/render"
 )
 
 var Repo *Repository

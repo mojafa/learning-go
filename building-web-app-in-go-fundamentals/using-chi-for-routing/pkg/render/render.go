@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/mojafa/building-web-app-in-go-fundamentals/sharing-data-with-templates/pkg/config"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/sharing-data-with-templates/pkg/models"
+	"github.com/tsawler-go-course/using-chi-for-routing/pkg/config"
+	"github.com/tsawler-go-course/using-chi-for-routing/pkg/models"
 )
 
 var functions = template.FuncMap{}

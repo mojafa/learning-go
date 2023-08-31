@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/mojafa/building-web-app-in-go-fundamentals/middlewares/pkg/config"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/middlewares/pkg/models"
+	"github.com/tsawler-go-course/middlewares/pkg/config"
+	"github.com/tsawler-go-course/middlewares/pkg/models"
 )
 
 var functions = template.FuncMap{}

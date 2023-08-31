@@ -3,7 +3,7 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/mojafa/building-web-app-in-go-fundamentals/standardising-file-structure/pkg/render"
+	"github.com/tsawler-go-course/working-with-layouts/pkg/render"
 )
 
 // Home is the handler for the home page

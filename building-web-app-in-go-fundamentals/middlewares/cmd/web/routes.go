@@ -5,8 +5,8 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/optmizing-cache-using-application-config/pkg/config"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/optmizing-cache-using-application-config/pkg/handlers"
+	"github.com/tsawler-go-course/middlewares/pkg/config"
+	"github.com/tsawler-go-course/middlewares/pkg/handlers"
 )
 
 func routes(app *config.AppConfig) http.Handler {

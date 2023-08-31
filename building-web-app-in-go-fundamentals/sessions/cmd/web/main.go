@@ -7,18 +7,22 @@ import (
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/sessions/pkg/handlers"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/sessions/pkg/render"
+	"github.com/tsawler-go-course/sessions/pkg/config"
+	"github.com/tsawler-go-course/sessions/pkg/handlers"
+	"github.com/tsawler-go-course/sessions/pkg/render"
 )
 
 const portNumber = ":8080"
+
+var app config.AppConfig
+var session *scs.SessionManager
 
 // main is the main function
 func main() {
 	// change this to true when in production
 	app.InProduction = false
 
-	//set up the session
+	// set up the session
 	session = scs.New()
 	session.Lifetime = 24 * time.Hour
 	session.Cookie.Persist = true
@@ -40,7 +44,7 @@ func main() {
 
 	render.NewTemplates(&app)
 
-	fmt.Println(fmt.Sprintf("Starting application on port %s", portNumber))
+	fmt.Println(fmt.Sprintf("Staring application on port %s", portNumber))
 
 	srv := &http.Server{
 		Addr:    portNumber,

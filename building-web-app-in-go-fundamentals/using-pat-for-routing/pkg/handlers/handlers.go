@@ -3,9 +3,9 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/mojafa/building-web-app-in-go-fundamentals/sharing-data-with-templates/pkg/config"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/sharing-data-with-templates/pkg/models"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/sharing-data-with-templates/pkg/render"
+	"github.com/tsawler-go-course/using-pat-for-routing/pkg/config"
+	"github.com/tsawler-go-course/using-pat-for-routing/pkg/models"
+	"github.com/tsawler-go-course/using-pat-for-routing/pkg/render"
 )
 
 // Repo the repository used by the handlers

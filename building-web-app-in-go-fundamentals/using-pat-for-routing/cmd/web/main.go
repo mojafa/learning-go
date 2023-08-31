@@ -5,9 +5,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/mojafa/building-web-app-in-go-fundamentals/optmizing-cache-using-application-config/pkg/config"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/optmizing-cache-using-application-config/pkg/handlers"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/optmizing-cache-using-application-config/pkg/render"
+	"github.com/tsawler-go-course/using-pat-for-routing/pkg/config"
+	"github.com/tsawler-go-course/using-pat-for-routing/pkg/handlers"
+	"github.com/tsawler-go-course/using-pat-for-routing/pkg/render"
 )
 
 const portNumber = ":8080"

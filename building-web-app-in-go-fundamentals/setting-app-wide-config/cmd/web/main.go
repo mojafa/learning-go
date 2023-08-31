@@ -5,9 +5,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/mojafa/building-web-app-in-go-fundamentals/setting-app-wide-config/pkg/config"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/setting-app-wide-config/pkg/handlers"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/setting-app-wide-config/pkg/render"
+	"github.com/tsawler-go-course/setting-app-wide-config/pkg/config"
+	"github.com/tsawler-go-course/setting-app-wide-config/pkg/handlers"
+	"github.com/tsawler-go-course/setting-app-wide-config/pkg/render"
 )
 
 const portNumber = ":8080"

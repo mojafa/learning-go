@@ -5,8 +5,8 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/optmizing-cache-using-application-config/pkg/config"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/sessions/pkg/handlers"
+	"github.com/tsawler-go-course/sessions/pkg/config"
+	"github.com/tsawler-go-course/sessions/pkg/handlers"
 )
 
 func routes(app *config.AppConfig) http.Handler {
@@ -14,7 +14,8 @@ func routes(app *config.AppConfig) http.Handler {
 
 	mux.Use(middleware.Recoverer)
 	mux.Use(NoSurf)
-	mux.Use(SessionLoad)
+	mux.Use(session.LoadAndSave)
+
 	mux.Get("/", handlers.Repo.Home)
 	mux.Get("/about", handlers.Repo.About)
 

@@ -3,9 +3,9 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/mojafa/building-web-app-in-go-fundamentals/middlewares/pkg/config"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/middlewares/pkg/models"
-	"github.com/mojafa/building-web-app-in-go-fundamentals/middlewares/pkg/render"
+	"github.com/tsawler-go-course/middlewares/pkg/config"
+	"github.com/tsawler-go-course/middlewares/pkg/models"
+	"github.com/tsawler-go-course/middlewares/pkg/render"
 )
 
 // Repo the repository used by the handlers

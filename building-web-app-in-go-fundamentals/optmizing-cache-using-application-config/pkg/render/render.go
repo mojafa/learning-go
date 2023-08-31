@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/mojafa/building-web-app-in-go-fundamentals/optmizing-cache-using-application-config/pkg/config"
+	"github.com/tsawler-go-course/optmizing-cache-using-application-config/pkg/config"
 )
 
 var functions = template.FuncMap{}
