@@ -9,11 +9,12 @@ require (
 	github.com/GoesToEleven/puppy v1.2.0 // indirect
 	github.com/bmizerany/pat v0.0.0-20210406213842-e4b6760bdd6f
 	github.com/cockroachdb/apd v1.1.0 // indirect
-	github.com/creasty/defaults v1.6.0 // indirect
+	github.com/go-chi/chi v1.5.4
 	github.com/go-pdf/fpdf v0.6.0 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
 	github.com/go-playground/universal-translator v0.18.0 // indirect
 	github.com/go-playground/validator/v10 v10.11.0 // indirect
+	github.com/justinas/nosurf v1.1.1
 	github.com/leekchan/accounting v0.3.1 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
