@@ -22,7 +22,6 @@ func NewTemplates(a *config.AppConfig) {
 }
 
 func AddDefaultData(td *models.TemplateData) *models.TemplateData {
-
 	return td
 }
 
